@@ -272,7 +272,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
+                    InlineKeyboardButton('Update Channel', url='https://t.me/ott_releases_only'),
                     InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
                 ]
                 ]
