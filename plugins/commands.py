@@ -101,8 +101,10 @@ async def start(bot, cmd):
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("join for more movies", url="https://t.me/cinemgraamam_requestgroup")
+                        inlinekeyboardbutton("OTT/DVD updates🥳", url="https://t.me/flix_updates")
+                        inlinekeyboardbutton("🎬new release channel🎬", url="https://t.me/ott_releases_only")
                     ],
-                    [
+                       
                         InlineKeyboardButton("About", callback_data="about")
                     ]
                 ]
