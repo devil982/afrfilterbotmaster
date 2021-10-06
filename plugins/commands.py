@@ -99,8 +99,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("our movie group", url="https://t.me/cinemgraamam_requestgroup"),
-                    ],[
+                        InlineKeyboardButton("our movie group🤩", url="https://t.me/cinemgraamam_requestgroup"),
+                    
                         InlineKeyboardButton("🎬new release channel🎬", url="https://t.me/ott_releases_only"),
                     ],[
                         InlineKeyboardButton("OTT/DVD updates🥳", url="https://t.me/flix_updates")
