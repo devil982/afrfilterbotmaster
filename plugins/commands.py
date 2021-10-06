@@ -97,7 +97,7 @@ async def start(bot, cmd):
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
+                ],[
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("join for more movies", url="https://t.me/cinemgraamam_requestgroup"),
