@@ -201,8 +201,9 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Update Channel', url='https://t.me/ott_releases_only'),
+            
+            InlineKeyboardButton('share and support', url='https://t.me/share/url?url=https://t.me/cinemgraamam_requestgroup')
         ]
         ]
     await message.reply(text="<b>Developer : <a href='https://t.me/cg_suggestionbot'>contact me</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nMain Channel : <a href='https://t.me/ott_releases_only'>new releases</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
