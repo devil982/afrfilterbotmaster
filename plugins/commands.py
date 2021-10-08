@@ -70,8 +70,8 @@ async def start(bot, cmd):
                         InlineKeyboardButton('OTT/DVD updates🥳', url='https://t.me/flix_updates'),
                     ],[
                         InlineKeyboardButton('🔗share and support🙏', url='https://t.me/share/url?url=https://t.me/cinemgraamam_requestgroup)
-                                             ]
-                                             ]                    
+                     ]                        
+                     ]                       
                                              
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
