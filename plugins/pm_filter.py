@@ -58,8 +58,8 @@ async def filter(client, message):
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
-        else:
-            await client.Message.reply_text("this movie is not in my database, contact admin")
+       else:
+            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
 
         if not btn:
