@@ -103,7 +103,8 @@ async def filter(client, message):
             await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-await update.reply_photo(
+ else:
+    await update.reply_photo(
 photo="https://telegra.ph/file/13f6091ae98f3e9f15884.jpg", 
 caption="cant find the movie in my database or please  check your spelling on google",
 reply_markup=InlineKeyboardMarkup([[
