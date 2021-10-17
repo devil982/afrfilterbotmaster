@@ -67,6 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🎥movie request group🎥', url='https://t.me/cinemgraamam_requestgroup'),
+                    ],[
                         InlineKeyboardButton('OTT/DVD updates🥳', url='https://t.me/flix_updates')
                     ]
                     ]
