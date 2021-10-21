@@ -133,18 +133,13 @@ async def group(client, message):
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
-         else:
-            await client.send_message(chat_id=message.from_user.id,text=f"""**Sorry, No Movie/Series Related to the Given Word Was Found 🥺**\n\n**Please Go to Google and Confirm the Correct Spelling 🙏**""",
-            reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton("🔍 Click Here & Go To Google 🔎", url=f"https://www.google.com")
-                        ]
-                    ]
-                ),
-                parse_mode="markdown"
-            )
-            return
+         await update.reply_photo(
+photo="https://telegra.ph/file/13f6091ae98f3e9f15884.jpg", 
+caption="cant find the movie in my database or please  check your spelling on google",
+reply_markup=InlineKeyboardMarkup([[
+InlineKeyboardButton(text="📞Contact admin", url="http://t.me/cg_suggestionbot"
+)]])
+)
 
         if not btn:
             return
