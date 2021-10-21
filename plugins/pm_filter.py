@@ -135,7 +135,17 @@ async def group(client, message):
                 )
         else:
             return
-        if not btn:
+         else:
+            await client.send_message(chat_id=message.from_user.id,text=f"""**Sorry, No Movie/Series Related to the Given Word Was Found 🥺**\n\n**Please Go to Google and Confirm the Correct Spelling 🙏**""",
+            reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("🔍 Click Here & Go To Google 🔎", url=f"https://www.google.com")
+                        ]
+                    ]
+                ),
+                parse_mode="markdown"
+            )
             return
 
         if len(btn) > 10: 
