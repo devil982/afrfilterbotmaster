@@ -68,7 +68,6 @@ async def filter(client, message):
                     ]
                 ),
                 parse_mode="markdown"
-             reply_to_message_id=message.message_id                         
             )
             return
 
