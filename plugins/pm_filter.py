@@ -54,10 +54,15 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = file.file_name
+                file_size = get_size(file.file_size)
+                file_link = f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
-                    )
+                    [
+                            InlineKeyboardButton(text=f"{file_name}", url=f"{file_link}"),
+                            InlineKeyboardButton(text=f"{file_size}", url=f"{file_link}")
+                    ]   
+                )
         else:
             await client.send_message(chat_id=message.from_user.id,text=f"""**Sorry, No Movie/Series Related to the Given Word Was Found 🥺**\n\n**Please Go to Google and Confirm the Correct Spelling 🙏**""",
             reply_markup=InlineKeyboardMarkup(
@@ -127,11 +132,16 @@ async def group(client, message):
             BOT["username"]=nyva
         files = await get_filter_results(query=search)
         if files:
-            for file in files:
+           for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = file.file_name
+                file_size = get_size(file.file_size)
+                file_link = f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
+                    [
+                            InlineKeyboardButton(text=f"{file_name}", url=f"{file_link}"),
+                            InlineKeyboardButton(text=f"{file_size}", url=f"{file_link}")
+                    ]   
                 )
         else:
             return
